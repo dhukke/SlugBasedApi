@@ -1,0 +1,17 @@
+### Create item
+
+POST http://localhost:5110/item HTTP/1.1
+content-type: application/json
+
+{
+    "description": "Pen",
+    "year": 2023
+}
+
+### Fetch item by id 
+
+GET http://localhost:5110/item/14fbf4d2-d83c-48f5-ae21-1e16cdf2c5ac
+
+### Fetch item by slug
+
+GET http://localhost:5110/item/pen-2023
